@@ -16,17 +16,19 @@ body {
 }
 
 .main-img {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
-    background-image: url("bg.jpg");
+   
+   
+    background-image: url("N_images/bg.jpg");
     /* background-color: red; */
     height: 100%;
     width: 100%;
-    opacity: 40%;
+    opacity: 80%;
     position: absolute;
     z-index: 45;
     top: 0;
+     background-repeat: repeat;
+    background-size: max(2000px, 100vw);
+     background-position: center;
 }
 
 /*  */
@@ -92,7 +94,7 @@ select {
     justify-content: center;
     align-content: center;
     /* margin: auto; */
-    margin: 19vh 0 3vh 0;
+    margin: 50px 0 3vh 0;
     line-height: -20px;
 
 }
@@ -117,6 +119,7 @@ select {
     font-family: "Baloo Bhaijaan 2", sans-serif;
     font-size: 25px;
     line-height: 50px;
+    padding-left: 15px;
 }
 
 .bannertext span:last-child {
@@ -124,6 +127,7 @@ select {
     font-weight: 400;
     font-family: "Baloo Bhaijaan 2", sans-serif;
     line-height: 30px;
+    padding-left: 15px;
 }
 
 
@@ -144,7 +148,7 @@ select {
     cursor: pointer;
     width: 30vw;
     z-index: 45;
-    padding-left: 2vh;
+    padding-right: 20px;
     border-radius: 9px;
 }
 
@@ -156,7 +160,7 @@ select {
 
 .inp::placeholder {
     color: white;
-    padding-left: 1vh;
+    padding-left: 100px;
 }
 
 .getstart {
@@ -190,7 +194,9 @@ select {
 
 
 @media (max-width: 500px) {
-
+.bannertext{
+    margin-top: 6px;
+}
     .btn {
         flex-direction: column;
 
@@ -213,6 +219,17 @@ select {
     .getstart {
         height: auto;
         width: 35px
+    }
+    .main-img{
+        height: 100vh;
+        width: 100vw;
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: cover;
+        margin-left: 20px;
+    }
+    .nav{
+       max-height: 7px;
     }
 }
 
@@ -287,10 +304,21 @@ select {
     position: absolute;
     z-index: 4;
 }
+@media (max-width: 900px) {
+
+    .c,
+    .d {
+        display: none;
+        margin: auto;
+    }
+
+    .t-i {
+        margin: 0 0 10px 10vh;
+    }
+}
 
 
-
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     .c,
     .d,
@@ -345,8 +373,10 @@ h3 {
     font-family: "Baloo Bhaijaan 2", sans-serif;
     color: #a09da6;
     /* background-color: rgb(0, 238, 255);  */
+   
 
 }
+
 
 .info {
     flex-grow: 1;
@@ -374,7 +404,12 @@ h3 {
     .info {
         margin: 10px 0 0 20px;
     }
-
+.tv{
+    position: relative;
+    left: 150px;
+    top:10px
+   
+}
 }
 
 .head3 {
